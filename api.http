@@ -1,0 +1,22 @@
+### Create Order  
+POST http://localhost:3000/orders HTTP/1.1
+content-type: application/json
+
+{
+  "symbol": "RUNEBUSD",
+  "quantity": "6",
+  "price": "5.6"
+}
+
+
+### Cancel Order
+POST http://localhost:3000/orders/cancel HTTP/1.1
+content-type: application/json
+
+{
+  "symbol": "RUNEBUSD",
+  "id": "1274"
+}
+
+### Get Order
+GET http://localhost:3000/orders/6792 HTTP/1.1
